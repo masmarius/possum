@@ -37,3 +37,4 @@ case $TERM in
 		PS1="\u@\h:\w${_p} " ;;
 esac
 
+# end
