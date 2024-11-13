@@ -23,7 +23,7 @@
 (setq inhibit-startup-screen t)
 
 (push '(tool-bar-lines . 0) default-frame-alist)
-(push '(background-color . "honeydew") default-frame-alist)
+;(push '(background-color . "honeydew") default-frame-alist)
 
 ;; HHHH---------------------------------------------------
 ;; backup
@@ -99,7 +99,7 @@ Version 2019-11-05"
 
 ;; Emacs: Open Recently Opened File
 ;; http://xahlee.info/emacs/emacs/emacs_recentf.html
-(require 'recentf)
+;(require 'recentf)
 (recentf-mode 1)
 
 (progn
@@ -150,21 +150,21 @@ Version 2019-11-05"
 
 ;; HHHH---------------------------------------------------
 
-(progn
+;(progn
   ;; minibuffer setup
-  (setq enable-recursive-minibuffers t)
-  (savehist-mode 0)
+;  (setq enable-recursive-minibuffers t)
+;  (savehist-mode 0)
   ;; big minibuffer height, for ido to show choices vertically
-  (setq max-mini-window-height 0.5)
+;  (setq max-mini-window-height 0.5)
   ;; minibuffer, stop cursor going into prompt
-  (customize-set-variable
-   'minibuffer-prompt-properties
-   (quote (read-only t cursor-intangible t face minibuffer-prompt))))
+;  (customize-set-variable
+;   'minibuffer-prompt-properties
+;   (quote (read-only t cursor-intangible t face minibuffer-prompt))))
 
 (when (>= emacs-major-version 28)
   (progn
-    (setq completion-styles '(flex))
-    (icomplete-vertical-mode 1)))
+    (setq completion-styles '(flex))))
+ ;   (icomplete-vertical-mode 1)))
 
 ;; HHHH---------------------------------------------------
 
